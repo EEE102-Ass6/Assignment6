@@ -11,8 +11,8 @@ using namespace std;
 class systemController
 {
 protected:
-	
-	Diver *diver;
+
+	Driver *driver;
 
 	Vehicle *vehicle;
 
@@ -20,39 +20,38 @@ public:
 	systemController();
 
 	void searchKey(string keys);// used to seach for a line infomation;
-	
-	bool addDirver(); // constructer of Diver. (string name, string gender, string age, ...) ask and anwer format.
+
+	bool addDriver(); // constructer of Diver. (string name, string gender, string age, ...) ask and anwer format.
 
 	bool addVehicle(); // constructer of Vehicle class.(string tample, string carNumber, int ...) ask and answer format.
 
-	void vehicleListAll(); 
+	void vehicleListAll();
 
-	void diverListAll();
+	void driverListAll();
 
 	void vehicleListAvaliable(); // call this fucntion when adding new vehicle
 
-	void diverListAvaliable(); // call this function when adding new diver to divide 
+	void driverListAvaliable(); // call this function when adding new diver to divide
 
-	bool modifyVehicle(); // 
+	bool modifyVehicle(); //
 
-	bool modifyDiver(); // 
+	bool modifyDriver(); //
 
-	void noteHistory(); // 
+	void noteHistory(std::string info); //
 
-	void regPayment(); // 
+	void regPayment(); //
 
-	void regRewards(); // 
+	void regRewards(); //
 
-	void regPunishment(); // 
+	void regPunishment(); //
 
-	void diverDelete(); // string pk is the primary key of the diver items
+	void driverDelete(); // string pk is the primary key of the diver items
 
 	void vehicleDelete(); //  string pk is the primary key of the vehicle items;
 
 	void DeleteAllVehicle(); //
 
-	void DeleteAllDiver();//
+	void DeleteAllDriver();//
 
 	~systemController();
 };
-
