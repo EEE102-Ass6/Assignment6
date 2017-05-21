@@ -2,24 +2,32 @@
 //Used to connect the mode layer and view layer
 #include <iostream>
 #include <string>
+#include <fstream>
 #include "systemController.h"
-#include "Diver.h"
+#include "File.h"// two class: driver_file and vehicle_file;
 #include "Vehicle.h"
+#include "Driver.h"
+#include "(Linkage).h"
 
 using namespace std;
 
 class systemController
+
 {
+private:
+	void noteHistory(std::string info);
+
+
 protected:
 
-	Driver *driver;
+	driver_file *driverList;
 
-	Vehicle *vehicle;
+	vehicle_file *vehicleList;
 
 public:
 	systemController();
 
-	void searchKey(string keys);// used to seach for a line infomation;
+	bool searchKey(char * keys);// used to seach for a line infomation;
 
 	bool addDriver(); // constructer of Diver. (string name, string gender, string age, ...) ask and anwer format.
 
@@ -37,21 +45,29 @@ public:
 
 	bool modifyDriver(); //
 
-	void noteHistory(std::string info); //
+	//void showEditingRecords();
 
-	void regPayment(); //
+	/*void regPayment(); //
 
 	void regRewards(); //
 
-	void regPunishment(); //
+	void regPunishment(); */
 
-	void driverDelete(); // string pk is the primary key of the diver items
+	bool driverDelete(); // string pk is the primary key of the diver items
 
-	void vehicleDelete(); //  string pk is the primary key of the vehicle items;
+	bool vehicleDelete(); //  string pk is the primary key of the vehicle items;
 
 	void DeleteAllVehicle(); //
 
 	void DeleteAllDriver();//
+
+	void showEditingRecords();
+
+	void deleteHistory();
+
+	void changeSudoPassword(char *psw);
+
+	char *getUserPassword();
 
 	~systemController();
 };
