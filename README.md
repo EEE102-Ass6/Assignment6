@@ -43,9 +43,10 @@ To provide uncluttered interface and simple views and control, the system simula
 
 
 
-## Section1. Description of file management
+## Description of file management
 
 - scr: Used to stroe our source code files.
 - docs: Used to stroe our documents and Final report:
   - **EEE102_Group Project Guidelines.pdf**
-  - …
+  - **Report.pdf**
+  - **API.pdf**
