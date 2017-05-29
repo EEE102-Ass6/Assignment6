@@ -11,8 +11,8 @@ For an easy way to create certain types of extension with no coding necessary, c
 
 Here are some external "how to" guides for creating extensions:
 
-- [API](/doc/API.pdf)
-- [Report](/dor/Report.pdf)
+- [API](/docs/API.pdf)
+- [Report](/docs/Report.pdf)
 
 ### Interface
 
